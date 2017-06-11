@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Mono|PT+Serif');
+
+@media (max-width: 600px) {
+	html, body {
+		width: 100%;
+		margin: 20px;
+	}
+	#post {
+		margin: 20px;
+	}
+}
+
+@media (min-width: 601px) {
+	html, body {
+		width: 600px;
+	}
+}
+
+html, body {
+	margin: 20px auto;
+	color: #222;
+	background: #eee;
+	font-family: 'PT Serif', serif;
+}
+
+#welcome {
+	border: 2px solid #333;
+	border-radius: 3px;
+	padding: 15px;
+	margin: 10px;
+}
+
+#welcome-header {
+	display: block;
+	font-size: 36px;
+}
+
+#post {
+	margin: 20px;
+}
+
+#post-title {
+	font-size: 48px;
+	display: block;
+}
+
+#post-date {
+	font-size: 20px;
+	font-style: italic;
+}
+
+code {
+	border: 1px solid #333;
+	border-radius: 2px;
+	padding: 3px;
+	background: #ddd;
+	font-family: 'PT Mono', monospace;
+}
+
+blockquote {
+	border-left: 10px solid #ccc;
+	margin-left: 5px;
+	padding-left: 10px;
+}
+
+#comment, #comment-form {
+	border: 2px solid #333;
+	border-radius: 3px;
+	padding: 5px;
+	margin: 10px;
+}
+
+#commenter-name {
+	display: block;
+	font-size: 18;
+	font-weight: bold;
+}
+
+#comment-timestamp {
+	display: block;
+	font-size: 12;
+	font-style: italic;
+	font-weight: bold;
+}
+
+#comment-form input, #comment-form textarea {
+	display: block;
+	border: 2px solid #333;
+	border-radius: 3px;
+	font-family: 'PT Serif', serif;
+}
+
+#comment-form textarea {
+	width: calc(100% - 5px);
+}
+
+#comment-form-title {
+	font-weight: bold;
+}
+
+a {
+	color: #333;
+	text-decoration-style: dotted;
+}
+
+a:hover {
+	text-decoration-style: solid;
+}

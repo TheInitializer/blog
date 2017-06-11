@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>blog</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+<body>
+	<div id='welcome'>
+		<span id='welcome-header'>Welcome!</span>
+		This is a place where I write things down. If you're new, head over <a href='{% url "post" "welcome" %}'>here</a>.
+	</div>
+	{% for post in posts %}
+		<div id="post">
+			<a href="{% url 'post' post.slug %}">
+				<span id='post-title'>{{ post.title }}</span>
+			</a>
+			<span id='post-date'>{{ post.date }}</span>
+		</div>
+	{% endfor %}
+</body>
+</html>

@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{ title }}</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+<body>
+	<div id="post">
+		<span id='post-title'>{{ title }}</span>
+		<span id='post-date'>{{ date }}</span>
+		<div id='content'>
+			{{ content | safe }}
+		</div>
+	</div>
+	<hr>
+	<form action="" method="post" id="comment-form" novalidate>
+		<span id='comment-form-title'>write a comment</span>
+        {{ comment_form.as_p }}
+        {% csrf_token %}
+        <input type="submit" value="Submit">
+    </form>
+	{% for comment in comments %}
+		<div id='comment'>
+			<span id='commenter-name'>{{ comment.name }}</span>
+			<span id='comment-timestamp'>{{ comment.time }}</span>
+			<p id='comment-content'>
+				{{ comment.content }}
+			</p>
+		</div>
+	{% endfor %}
+</body>
+</html>
