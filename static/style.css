@@ -18,13 +18,13 @@
 
 html, body {
 	margin: 20px auto;
-	color: #222;
+	color: #444;
 	background: #eee;
 	font-family: 'PT Serif', serif;
 }
 
 #welcome {
-	border: 2px solid #333;
+	border: 2px solid #555;
 	border-radius: 3px;
 	padding: 15px;
 	margin: 10px;
@@ -50,10 +50,10 @@ html, body {
 }
 
 code {
-	border: 1px solid #333;
+	border: 1px solid #555;
 	border-radius: 2px;
 	padding: 3px;
-	background: #ddd;
+	background: #dfdfdf;
 	font-family: 'PT Mono', monospace;
 }
 
@@ -64,7 +64,7 @@ blockquote {
 }
 
 #comment, #comment-form {
-	border: 2px solid #333;
+	border: 2px solid #555;
 	border-radius: 3px;
 	padding: 5px;
 	margin: 10px;
@@ -85,7 +85,7 @@ blockquote {
 
 #comment-form input, #comment-form textarea {
 	display: block;
-	border: 2px solid #333;
+	border: 2px solid #555;
 	border-radius: 3px;
 	font-family: 'PT Serif', serif;
 }
@@ -99,7 +99,7 @@ blockquote {
 }
 
 a {
-	color: #333;
+	color: #555;
 	text-decoration-style: dotted;
 }
 
