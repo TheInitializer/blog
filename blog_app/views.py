@@ -2,7 +2,7 @@ import datetime
 from django.shortcuts import get_object_or_404, render
 from .models import Post, Comment
 from .forms import CommentForm
-import markdown2
+import mistune
 
 # Create your views here.
 def post(request, slug):
@@ -23,7 +23,7 @@ def post(request, slug):
 	context = {
 		'title': p.title, 
 		'date': p.date, 
-		'content': markdown2.markdown(p.content),
+		'content': mistune.markdown(p.content),
 		'comments': comments,
 		'comment_form': form}
 	return render(request, 'post.html', context)
