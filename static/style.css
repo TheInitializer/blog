@@ -52,9 +52,10 @@ html, body {
 code {
 	border: 1px solid #555;
 	border-radius: 2px;
-	padding: 3px;
+	padding: 1px 3px;
 	background: #dfdfdf;
 	font-family: 'Fira Mono', monospace;
+	font-size: 15px;
 }
 
 .highlight > pre, pre > code {
@@ -66,6 +67,7 @@ code {
 	width: 100%;
 	background: #282a36;
 	font-size: 12px;
+	border: none;
 }
 
 blockquote {
