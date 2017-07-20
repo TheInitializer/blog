@@ -118,9 +118,9 @@ a:hover {
 	text-decoration-style: solid;
 }
 
-/*******************************************
-Pygments highlighting styles (Monokai theme)
-*******************************************/
+/**********************************************\
+| Pygments highlighting styles (Monokai theme) |
+\**********************************************/
 
 .highlight .hll { background-color: #f1fa8c }
  .highlight .c { color: #6272a4 } /* Comment */
